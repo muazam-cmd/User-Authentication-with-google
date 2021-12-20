@@ -77,6 +77,7 @@ app.get("/auth/google",
 
     }));
 
+
 app.get("/auth/google/secrets",
     passport.authenticate('google', { failureRedirect: '/login' }),
     function (req, res) {
